@@ -14,7 +14,8 @@ export default {
         "navbar-bg": "#0B143F", 
         "footer-bg": "#161616", 
         "social-link-bg": "#1B1B1B", 
-        "navbar-item-underline": "#A86161"
+        "navbar-item-underline": "#A86161", 
+        "card-bg": "#1E275A"
       }, 
       keyframes: {
         fadeIn: {
