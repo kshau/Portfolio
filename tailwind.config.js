@@ -15,7 +15,16 @@ export default {
         "footer-bg": "#161616", 
         "social-link-bg": "#1B1B1B", 
         "navbar-item-underline": "#A86161"
-      }
+      }, 
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: "0", top: "60px", position: "relative" },
+          "100%": { opacity: "1", top: "20px", position: "relative" },
+        }
+      }, 
+      animation: {
+        fadeIn: 'fadeIn 0.5s forwards',
+      }, 
     },
     textShadow: {
       DEFAULT: '0 10px 20px var(--tw-shadow-color)',
