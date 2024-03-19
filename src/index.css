@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: source-code-pro;
+  src: url("./assets/fonts/source-code-pro.ttf");
+}
+
+body {
+  background-color: #141D4A;
+  font-family: source-code-pro;
+}
