@@ -1,14 +1,14 @@
 import Footer from "../components/footer/Footer";
 import Navbar from "../components/navbar/Navbar";
 
-import ProjectCard from "../components/projects/ProjectCard";
-import ProjectData from "../components/projects/ProjectData";
+import ProjectCard from "../components/ProjectCard";
+import ProjectData from "../components/data/ProjectsData";
 
 function Projects() {
 
     const cardElems = [];
 
-    var animDelay = 0.2;
+    var animDelay = 0.4;
     for (var c of ProjectData.reverse()) {
 
         animDelay += 0.1;
@@ -23,7 +23,7 @@ function Projects() {
     return (
         <>
             <div className="flex flex-col text-center mt-[120px]">
-                <span className="text-[70px] font-bold text-white text-shadow shadow-gray-900 animate-fadeIn opacity-0">Projects</span>
+                <span className="text-[70px] font-bold text-white text-shadow shadow-gray-900 animate-fadeIn opacity-0"  style={{animationDelay: "0.2s"}}>Projects</span>
             </div>
 
             <div className="flex justify-center mt-[20px] flex-wrap pb-[120px]" id="projectCards">
