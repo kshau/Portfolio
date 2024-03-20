@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 
 import Home from './pages/Home';
 import Projects from './pages/Projects';
@@ -14,6 +14,7 @@ function App() {
 
           <Route path="/projects" element={<Projects/>}/>
           <Route path="/achievements" element={<Achievements/>}/>
+
        </Routes>
     </>
  );

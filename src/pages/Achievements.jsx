@@ -25,8 +25,10 @@ function Achievements() {
                 <span className="text-[70px] font-bold text-white text-shadow shadow-gray-900 animate-fadeIn opacity-0"  style={{animationDelay: "0.2s"}}>Achievements</span>
             </div>
 
-            <div className="flex justify-center mt-[20px] flex-wrap pb-[120px]" id="projectCards">
-                {cardElems}
+            <div className="flex justify-center">
+                <div className="flex justify-center mt-[20px] flex-col pb-[120px]" id="projectCards">
+                    {cardElems}
+                </div>
             </div>
 
             <Navbar page="Achievements"/>

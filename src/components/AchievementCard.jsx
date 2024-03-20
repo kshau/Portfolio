@@ -1,3 +1,5 @@
+import React, { Suspense } from 'react';
+
 function AchievementCard(props) {
 
     const {event, award, image, animDelay} = props;
