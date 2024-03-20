@@ -13,7 +13,7 @@ function Achievements() {
         animDelay += 0.1;
 
         cardElems.push(
-            <AchievementCard title={c.title} image={c.image} href={c.href} animDelay={`${animDelay}s`} className={`animate-fadeIn opacity-0`}>
+            <AchievementCard event={c.event} award={c.award} image={c.image} href={c.href} animDelay={`${animDelay}s`} className={`animate-fadeIn opacity-0`}>
                 {c.content}
             </AchievementCard>
         )

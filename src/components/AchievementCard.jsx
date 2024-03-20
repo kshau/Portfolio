@@ -1,16 +1,16 @@
 function AchievementCard(props) {
 
-    const {title, image, href, animDelay, children} = props;
+    const {event, award, image, animDelay} = props;
 
     return (
         <>
-            <a href={href} target="_blank" className="bg-card-bg flex flex-row w-[500px] rounded-[20px] font-bold py-[10px] m-[15px] drop-shadow-lg animate-fadeIn opacity-0" style={{animationDelay: animDelay}}>
+            <a className="bg-card-bg flex flex-col w-[700px] rounded-[20px] font-bold py-[10px] m-[15px] drop-shadow-lg animate-fadeIn opacity-0" style={{animationDelay: animDelay}}>
 
-                <img src={image} className="w-[180px] h-[160px] m-[20px] rounded-[20px] border border-white border-[2px] object-cover"/>
+                <img src={image} className="w-[600px] h-[300px] m-[20px] rounded-[20px] border border-white border-[2px] object-cover self-center mb-[30px]"/>
 
-                <div className="flex flex-col my-[20px] pr-[10px]">
-                    <span className="text-[30px] text-white">{title}</span>
-                    <span className="text-gray-1 text-[15px]">{children}</span>
+                <div className="text-center mb-[10px] flex flex-col">
+                    <span className="text-[27px] text-white">{event}</span>
+                    <span className="text-[22px] text-red-300">{award}</span>
                 </div>
 
             </a>
