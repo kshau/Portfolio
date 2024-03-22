@@ -10,7 +10,7 @@ function Navbar(props) {
 
     return (
         <>
-            <div className="bg-navbar-bg w-[100vw] h-[120px] fixed top-0 shadow-lg flex justify-center">
+            <div className="bg-navbar-bg w-[100vw] h-[100px] fixed top-0 shadow-lg flex justify-center">
                 <NavbarItem name="Home" icon={HomeIcon} href="/" active={page}/>
                 <NavbarItem name="Projects" icon={ProjectsIcon} href="/projects" active={page}/>
                 <NavbarItem name="Achievements" icon={AchievementsIcon} href="/achievements" active={page}/>

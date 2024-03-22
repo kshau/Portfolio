@@ -10,12 +10,13 @@ function Achievements() {
 
     var animDelay = 0.4;
     var floatLeft = true;
+
     for (var c of AchievementsData.reverse()) {
 
         animDelay += 0.1;
 
         const elem = (
-            <AchievementCard event={c.event} award={c.award} image={c.image} href={c.href} animDelay={`${animDelay}s`} className={`animate-fadeIn opacity-0`}>
+            <AchievementCard event={c.event} award={c.award} image={c.image} href={c.href} right={!floatLeft} animDelay={`${animDelay}s`} className={`animate-fadeIn opacity-0`}>
                 {c.content}
             </AchievementCard>
         )
@@ -33,19 +34,19 @@ function Achievements() {
 
     return (
         <>
-            <div className="flex flex-col text-center mt-[120px]">
+            <div className="flex flex-col text-center mt-[100px]">
 
                 <span className="text-[70px] font-bold text-white text-shadow shadow-gray-900 animate-fadeIn opacity-0"  style={{animationDelay: "0.2s"}}>Achievements</span>
 
-                <div className="flex justify-center">
+                <div className="flex justify-center animate-fadeIn opacity-0"  style={{animationDelay: "0.3s"}}>
 
-                    <div className="">
+                    <div className="mt-[30px]">
                             {cardElemsLeft}
                     </div>
 
-                    <div className="h-[100vh] w-[10px] bg-yellow-500 left-[50vw] rounded-md"></div>
+                    <div className="w-[10px] bg-yellow-500 left-[50vw] rounded-md mt-[40px] drop-shadow-lg"></div>
 
-                    <div className="">
+                    <div className="mt-[30px]">
                             {cardElemsRight}
                     </div>
 

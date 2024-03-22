@@ -10,7 +10,7 @@ export default {
     extend: {
       colors: {
         "white": "#E0E0E0", 
-        "gray-1": "#A1A1A1", 
+        "gray": "#A1A1A1", 
         "navbar-bg": "#0B143F", 
         "footer-bg": "#161616", 
         "social-link-bg": "#1B1B1B", 

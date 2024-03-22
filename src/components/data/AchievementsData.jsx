@@ -4,7 +4,7 @@ import Image_LanierTechFair2024 from "../../assets/achievements/lanier_tech_fair
 const AchievementsData = [
 
     {
-        "event": "HackGwinett 3", 
+        "event": "HackGwinett 3 (2023)", 
         "award": "Best Humanitarian",
         "image": Image_LanierTechFair2024, 
     }, 

@@ -5,8 +5,8 @@ function NavbarItem(props) {
     return (
         <>
             <a href={href} className={`flex flex-row mx-[30px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 decoration-navbar-item-underline underline-offset-[6px]`}>
-                <img src={icon} className={`w-[60px] filter ${(name == active) ? ("") : ("brightness-[0.7]")}`}/>
-                <span className={`text-[40px] mt-[30px] font-bold ml-[15px] ${(name == active) ? ("text-white") : ("text-gray-500")}`}>{name}</span>
+                <img src={icon} className={`w-[50px] filter ${(name == active) ? ("") : ("brightness-[0.7]")}`}/>
+                <span className={`text-[30px] mt-[27px] font-bold ml-[15px] ${(name == active) ? ("text-white") : ("text-gray")}`}>{name}</span>
             </a>
         </>
     )
