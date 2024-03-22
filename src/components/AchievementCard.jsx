@@ -19,8 +19,8 @@ function AchievementCard(props) {
 
                     <img src={image} className="w-[350px] h-[180px] m-[20px] rounded-[20px] border border-white border-[2px] object-cover self-center mb-[30px]"/>
 
-                    <div className="text-center mb-[10px] flex flex-col">
-                        <span className="text-[27px] text-white w-[500px]">{event}</span>
+                    <div className="text-center mb-[10px] flex flex-col w-[500px]">
+                        <span className="text-[27px] text-white">{event}</span>
                         <span className="text-[22px] text-red-300">{award}</span>
                     </div>
 

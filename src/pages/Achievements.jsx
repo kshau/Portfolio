@@ -38,7 +38,7 @@ function Achievements() {
 
                 <span className="text-[70px] font-bold text-white text-shadow shadow-gray-900 animate-fadeIn opacity-0"  style={{animationDelay: "0.2s"}}>Achievements</span>
 
-                <div className="flex justify-center animate-fadeIn opacity-0"  style={{animationDelay: "0.3s"}}>
+                <div className="flex justify-center animate-fadeIn opacity-0 mb-[150px]" style={{animationDelay: "0.3s"}}>
 
                     <div className="mt-[30px]">
                             {cardElemsLeft}
