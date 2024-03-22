@@ -9,7 +9,7 @@ function ProjectCard(props) {
                 <img src={image} className="w-[180px] h-[160px] m-[20px] rounded-[20px] border border-white border-[2px] object-cover"/>
 
                 <div className="flex flex-col my-[20px] pr-[10px]">
-                    <span className="text-[30px] text-yellow-500">{title}</span>
+                    <span className="text-[30px] text-white">{title}</span>
                     <span className="text-gray text-[15px]">{children}</span>
                 </div>
 

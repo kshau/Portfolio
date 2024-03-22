@@ -15,6 +15,7 @@ export default {
         "footer-bg": "#161616", 
         "social-link-bg": "#1B1B1B", 
         "navbar-item-underline": "#A86161", 
+        "achievement-date-bg": "#111c4f",
         "card-bg": "#1E275A"
       }, 
       keyframes: {

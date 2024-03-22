@@ -2,11 +2,11 @@ import React, { Suspense } from 'react';
 
 function AchievementCard(props) {
 
-    const {event, award, image, right, animDelay} = props;
+    const {event, award, date, image, right, animDelay} = props;
 
     console.log(right);
 
-    const line = <div className="h-[10px] w-[70px] bg-yellow-500 left-[50vw] mt-[180px] drop-shadow-lg"></div>
+    const line = <div className="h-[10px] w-[70px] bg-yellow-500 left-[50vw] mt-[130px] drop-shadow-lg"></div>
 
     return (
         <>
@@ -15,13 +15,16 @@ function AchievementCard(props) {
 
                 {(right) ? (line) : ("")}
 
-                <a className={`bg-card-bg w-[500px] flex flex-col w-fit rounded-[20px] font-bold py-[10px] m-[15px] drop-shadow-lg`}>
+                <a className={`bg-card-bg w-[375px] flex flex-col w-fit rounded-[20px] font-bold py-[10px] m-[15px] drop-shadow-lg`}>
 
-                    <img src={image} className="w-[350px] h-[180px] m-[20px] rounded-[20px] border border-white border-[2px] object-cover self-center mb-[30px]"/>
+                    <img src={image} className="w-[260px] h-[130px] m-[20px] rounded-[20px] border border-white border-[2px] object-cover self-center mb-[30px]"/>
 
-                    <div className="text-center mb-[10px] flex flex-col w-[500px]">
-                        <span className="text-[27px] text-white">{event}</span>
-                        <span className="text-[22px] text-red-300">{award}</span>
+                    <div className="text-center mb-[10px] flex flex-col w-[375px]">
+                        <span className="text-[20px] text-white">{event}</span>
+                        <span className="text-[15px] text-red-300">{award}</span>
+                        <div className='flex justify-center'>
+                            <span className='text-[15px] text-yellow-500 mt-[20px] bg-achievement-date-bg w-fit p-[5px] px-[10px] rounded-[20px]'>{date}</span>
+                        </div>
                     </div>
 
                 </a>

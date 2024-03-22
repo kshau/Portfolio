@@ -16,7 +16,7 @@ function Achievements() {
         animDelay += 0.1;
 
         const elem = (
-            <AchievementCard event={c.event} award={c.award} image={c.image} href={c.href} right={!floatLeft} animDelay={`${animDelay}s`} className={`animate-fadeIn opacity-0`}>
+            <AchievementCard event={c.event} award={c.award} date={c.date} image={c.image} href={c.href} right={!floatLeft} animDelay={`${animDelay}s`} className={`animate-fadeIn opacity-0`}>
                 {c.content}
             </AchievementCard>
         )
