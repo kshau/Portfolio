@@ -1,20 +1,23 @@
+import fetch from "sync-fetch";
+
 import Footer from "../components/footer/Footer";
 import Navbar from "../components/navbar/Navbar";
 
 import ProjectCard from "../components/ProjectCard";
-import ProjectData from "../components/data/ProjectsData";
 
 function Projects() {
 
     const cardElems = [];
 
+    const projectData = fetch("https://raw.githubusercontent.com/kshau/Portfolio/main/data/projects.json").json();
+
     var animDelay = 0.4;
-    for (var c of ProjectData.reverse()) {
+    for (var c of projectData) {
 
         animDelay += 0.1;
 
         cardElems.push(
-            <ProjectCard title={c.title} image={c.image} href={c.href} animDelay={`${animDelay}s`} className={`animate-fadeIn opacity-0`}>
+            <ProjectCard title={c.title} image={`https://raw.githubusercontent.com/kshau/Portfolio/main/data/projects/${c.image}`} href={c.href} animDelay={`${animDelay}s`} className={`animate-fadeIn opacity-0`}>
                 {c.content}
             </ProjectCard>
         )

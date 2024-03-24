@@ -1,9 +1,12 @@
+import fetch from "sync-fetch";
+
 import AchievementCard from "../components/AchievementCard";
 import Footer from "../components/footer/Footer";
 import Navbar from "../components/navbar/Navbar";
-import AchievementsData from "../components/data/AchievementsData";
 
 function Achievements() {
+
+    const achievementsData = fetch("https://raw.githubusercontent.com/kshau/Portfolio/main/data/achievements.json").json();
 
     const cardElemsRight = [];
     const cardElemsLeft = [];
@@ -11,12 +14,12 @@ function Achievements() {
     var animDelay = 0.4;
     var floatLeft = true;
 
-    for (var c of AchievementsData.reverse()) {
+    for (var c of achievementsData.reverse()) {
 
         animDelay += 0.1;
 
         const elem = (
-            <AchievementCard event={c.event} award={c.award} date={c.date} image={c.image} href={c.href} right={!floatLeft} animDelay={`${animDelay}s`} className={`animate-fadeIn opacity-0`}>
+            <AchievementCard event={c.event} award={c.award} date={c.date} image={`https://raw.githubusercontent.com/kshau/Portfolio/main/data/achievements/${c.image}`} href={c.href} right={!floatLeft} animDelay={`${animDelay}s`} className={`animate-fadeIn opacity-0`}>
                 {c.content}
             </AchievementCard>
         )
