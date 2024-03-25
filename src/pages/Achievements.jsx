@@ -19,7 +19,7 @@ function Achievements() {
         animDelay += 0.1;
 
         const elem = (
-            <AchievementCard event={c.event} award={c.award} date={c.date} image={`https://raw.githubusercontent.com/kshau/Portfolio/main/data/achievements/${c.image}`} href={c.href} right={!floatLeft} animDelay={`${animDelay}s`} className={`animate-fadeIn opacity-0`}>
+            <AchievementCard event={c.event} award={c.award} date={c.date} image={`https://portfolio-assets.shaurya.pro/achievements/${c.image}`} href={c.href} right={!floatLeft} animDelay={`${animDelay}s`} className={`animate-fadeIn opacity-0`}>
                 {c.content}
             </AchievementCard>
         )
