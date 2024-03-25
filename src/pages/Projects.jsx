@@ -9,7 +9,7 @@ function Projects() {
 
     const cardElems = [];
 
-    const projectData = fetch("https://raw.githubusercontent.com/kshau/Portfolio/main/data/projects.json").json();
+    const projectData = fetch("https://portfolio-assets.shaurya.pro/projects/projects.json").json();
 
     var animDelay = 0.4;
     for (var c of projectData) {
