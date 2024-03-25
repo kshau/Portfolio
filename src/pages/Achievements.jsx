@@ -6,7 +6,7 @@ import Navbar from "../components/navbar/Navbar";
 
 function Achievements() {
 
-    const achievementsData = fetch("https://raw.githubusercontent.com/kshau/Portfolio/main/data/achievements.json").json();
+    const achievementsData = fetch("https://portfolio-assets.shaurya.pro/achievements/achievements.json").json();
 
     const cardElemsRight = [];
     const cardElemsLeft = [];
