@@ -4,8 +4,6 @@ function AchievementCard(props) {
 
     const {event, award, date, image, right, animDelay} = props;
 
-    console.log(right);
-
     const line = <div className="h-[10px] w-[70px] bg-yellow-500 left-[50vw] mt-[130px] drop-shadow-lg"></div>
 
     return (
