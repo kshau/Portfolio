@@ -5,6 +5,13 @@
         "image": "dartctf.png", 
         "href": "https://dartctf.com",
         "content": "A simple CTF game made for GaSTC 2024! Includes cryptography, steganography, and web related challenges. Collab with Keshav Shah."
-    }
+    }, 
+
+    {
+        "title": "DNA Info", 
+        "image": "dnainfo.png", 
+        "href": "https://dnainfo.shaurya.pro",
+        "content": "An online tool used for calculating properties of DNA strands such as mRNA and amino acids made from it."
+    }, 
 
 ]
