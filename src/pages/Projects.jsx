@@ -17,7 +17,7 @@ function Projects() {
         animDelay += 0.1;
 
         cardElems.push(
-            <ProjectCard title={c.title} image={`https://raw.githubusercontent.com/kshau/Portfolio/main/data/projects/${c.image}`} href={c.href} animDelay={`${animDelay}s`} className={`animate-fadeIn opacity-0`}>
+            <ProjectCard title={c.title} image={`https://portfolio-assets.shaurya.pro/projects/${c.image}`} href={c.href} animDelay={`${animDelay}s`} className={`animate-fadeIn opacity-0`}>
                 {c.content}
             </ProjectCard>
         )
