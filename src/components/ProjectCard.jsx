@@ -4,7 +4,7 @@ function ProjectCard(props) {
 
     return (
         <>
-            <a href={href} target="_blank" className="bg-card-bg flex flex-row w-[500px] rounded-[20px] font-bold py-[10px] m-[15px] drop-shadow-lg animate-fadeIn opacity-0 hover:-translate-y-[10px] duration-300" style={{animationDelay: animDelay}}>
+            <a href={href} target="_blank" className="bg-card-bg flex flex-row w-[500px] rounded-[20px] font-bold py-[10px] m-[15px] drop-shadow-lg animate-fadeIn opacity-0 hover:-translate-y-1 hover:scale-110 duration-300" style={{animationDelay: animDelay}}>
 
                 <img src={image} className="w-[180px] h-[160px] m-[20px] rounded-[20px] border border-white border-[2px] object-cover"/>
 
@@ -20,3 +20,4 @@ function ProjectCard(props) {
 }
 
 export default ProjectCard;
+
