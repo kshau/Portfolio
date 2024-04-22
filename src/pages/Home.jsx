@@ -14,7 +14,7 @@ function Home() {
         
         <div className="text-[8vh] font-bold text-yellow-500 text-shadow-lg text-shadow shadow-gray-900">
           <span className="animate-fadeIn opacity-0" style={{animationDelay: "0.5s"}}>Coder, </span>
-          <span className="animate-fadeIn opacity-0" style={{animationDelay: "0.6s"}}>Gamer, </span>
+          <span className="animate-fadeIn opacity-0" style={{animationDelay: "0.6s"}}>Drummer, </span>
           <span className="animate-fadeIn opacity-0" style={{animationDelay: "0.7s"}}>CTFs</span>
         </div>
     
