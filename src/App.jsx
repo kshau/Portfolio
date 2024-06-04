@@ -15,6 +15,8 @@ function App() {
           <Route path="/projects" element={<Projects/>}/>
           <Route path="/achievements" element={<Achievements/>}/>
 
+          <Route path="/playlist" element={() => {location.href = "https://open.spotify.com/playlist/7udkrVtvo7SNLvEtoXym0P?si=a180c394d59e4af1"}}/>
+
        </Routes>
     </>
  );
