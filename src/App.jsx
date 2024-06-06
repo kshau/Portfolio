@@ -15,7 +15,7 @@ function App() {
           <Route path="/projects" element={<Projects/>}/>
           <Route path="/achievements" element={<Achievements/>}/>
 
-          <Route path="/playlist" render={() => <Redirect to="https://open.spotify.com/playlist/7udkrVtvo7SNLvEtoXym0P?si=6963426aec9a4103"/>}</Route>}/>
+          <Route path="/playlist" element={<Redirect to="https://open.spotify.com/playlist/7udkrVtvo7SNLvEtoXym0P?si=6963426aec9a4103"/>}</Route>}/>
 
        </Routes>
     </>
