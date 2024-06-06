@@ -3,7 +3,6 @@ import { Routes, Route, Link, Redirect } from 'react-router-dom';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Achievements from './pages/Achievements';
-import Redirect from './pages/Redirect';
 
 function App() {
 
